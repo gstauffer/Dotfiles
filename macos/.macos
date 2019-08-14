@@ -143,6 +143,17 @@ defaults write com.apple.dock mru-spaces -bool false
 # Only use UTF-8 in Terminal.app
 defaults write com.apple.terminal StringEncodings -array 4
 
+# Allow clipboard access in iTerm
+defaults write com.googlecode.iterm2 AllowClipboardAccess -bool true
+
+# Don't prompt on quit
+defaults write com.googlecode.iterm2 PromptOnQuit -bool false
+
+# Quit when all windows are closed
+defaults write com.googlecode.iterm2 QuitWhenAllWindowsClosed -bool true
+
+# Hack font for iTerm
+defaults write com.googlecode.iterm2 HackNerdFontComplete-Regular 12
 ###############################################################################
 # Sublime Text                                                                #
 ###############################################################################
