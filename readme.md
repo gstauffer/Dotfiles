@@ -4,4 +4,4 @@ A collection of dotfiles targeting zsh, nvim, tmux, and other various utilies I 
 
 At this time, they are not particularly extensively configured, and a lot will probably be added and/or changed over time. 
 
-I manage these with [GNU Stow](https://www.gnu.org/software/stow/); `stow nvim` will symlink the files within the nvim directory to the same relative positons in your home directory.
+I manage these with [GNU Stow](https://www.gnu.org/software/stow/); as an example, `stow nvim` will symlink the files within the nvim directory to the same relative positions in your home directory.
