@@ -5,8 +5,12 @@ set encoding=utf-8
 call plug#begin()
 	" Lightline statusbar/tabline
 	Plug 'itchyny/lightline.vim'
+	" ALE asynchronous linting engine
+	Plug 'dense-analysis/ale'
 	" NerdTree file manager
 	Plug 'scrooloose/nerdTree'
+	" Git gutter status
+	Plug 'airblade/vim-gitgutter'
 call plug#end()
 
 " Key mappings

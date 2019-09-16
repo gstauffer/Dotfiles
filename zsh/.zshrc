@@ -21,4 +21,4 @@ fi
 
 # Aliases
 alias l="ls -lah"
-
+alias weather="curl v2.wttr.in/Hesston"
