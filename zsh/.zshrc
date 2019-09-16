@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/gstauffer/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Name of theme to be used.
 ZSH_THEME="powerlevel9k/powerlevel9k"
