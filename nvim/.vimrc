@@ -1,7 +1,14 @@
 " utf-8 encoding
 set encoding=utf-8
 
-" start vim-plug
+" Automatically install vim-plug if not installed
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+" Start vim-plug
 call plug#begin()
 	" Lightline statusbar/tabline
 	Plug 'itchyny/lightline.vim'
