@@ -20,5 +20,4 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
 fi
 
 # Aliases
-alias l="ls -lah"
-alias weather="curl v2.wttr.in/Hesston"
+alias weather="curl v2.wttr.in/Harrisonburg"
