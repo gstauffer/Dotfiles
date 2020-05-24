@@ -1,6 +1,9 @@
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
 
+# 256 color environment variable
+export TERM="xterm-256color"
+
 # Name of theme to be used.
 ZSH_THEME="powerlevel9k/powerlevel9k"
 
@@ -9,7 +12,8 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+# zsh-syntax-highlighting should be the last one listed.
+plugins=(git zsh-syntax-highlighting)
 
 # Sourced scripts
 source $ZSH/oh-my-zsh.sh
@@ -21,3 +25,5 @@ fi
 
 # Aliases
 alias weather="curl v2.wttr.in/Harrisonburg"
+alias hg="history | grep"
+alias rb="ruby"
