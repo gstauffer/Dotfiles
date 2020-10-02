@@ -43,3 +43,6 @@ let NERDTreeShowHidden=1
 
 " Set `w!!` to save as root
 cmap w!! w !sudo tee > /dev/null %
+
+" Set YAML spacing (credits to https://stackoverflow.com/a/37488992/8673439)
+autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
