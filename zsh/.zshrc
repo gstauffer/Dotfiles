@@ -26,4 +26,5 @@ fi
 # Aliases
 alias weather="curl v2.wttr.in/Harrisonburg"
 alias hg="history | grep"
+alias hfzf="history | fzf"
 alias rb="ruby"
