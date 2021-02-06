@@ -23,6 +23,21 @@ if command -v tmux &> /dev/null && [ -n "$PS1" ] && [[ ! "$TERM" =~ screen ]] &&
 	exec tmux new-session -A -s main 
 fi
 
+# make a directory and cd to it
+mcd() {
+	test -d "$1" || mkdir "$1" && cd "$1"
+}
+
+# jump N directories up in directory tree
+up() {
+	ups=""
+	for i in $(seq 1 $1)
+	do
+		ups=$ups"../"
+	done
+	cd $ups
+}
+
 # Aliases
 alias weather="curl v2.wttr.in/Harrisonburg"
 alias hg="history | grep"
