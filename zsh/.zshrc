@@ -28,4 +28,6 @@ alias weather="curl v2.wttr.in/Harrisonburg"
 alias hg="history | grep"
 alias hfzf="history | fzf"
 alias rb="ruby"
+
+# PATH variable - add /usr/local/sbin for brew
 export PATH="/usr/local/sbin:$PATH"
