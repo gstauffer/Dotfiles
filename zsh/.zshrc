@@ -46,3 +46,8 @@ alias rb="ruby"
 
 # PATH variable - add /usr/local/sbin for brew
 export PATH="/usr/local/sbin:$PATH"
+
+# Source local zshrc
+if [ -f "$HOME/.zshrc-local" ]; then
+    source ~/.zshrc-local
+fi
