@@ -5,7 +5,7 @@ export ZSH="$HOME/.oh-my-zsh"
 export TERM="xterm-256color"
 
 # Name of theme to be used.
-ZSH_THEME="powerlevel9k/powerlevel9k"
+ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Which plugins would you like to load?
 # Standard plugins can be found in ~/.oh-my-zsh/plugins/*
