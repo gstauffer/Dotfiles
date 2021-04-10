@@ -44,8 +44,11 @@ alias hg="history | grep"
 alias hfzf="history | fzf"
 alias rb="ruby"
 
-# PATH variable - add /usr/local/sbin for brew
+# PATH variable - add /usr/local/sbin for brew (Intel)
 export PATH="/usr/local/sbin:$PATH"
+
+# PATH variable - add /opt/homebrew/bin for brew (ARM)
+export PATH="/opt/homebrew/bin:$PATH"
 
 # Source local zshrc
 if [ -f "$HOME/.zshrc-local" ]; then
