@@ -18,6 +18,7 @@ call plug#begin()
 	Plug 'scrooloose/nerdTree'
 	" Git gutter status
 	Plug 'airblade/vim-gitgutter'
+	Plug 'neoclide/coc.nvim', {'branch': 'release'}
 call plug#end()
 
 " Key mappings
@@ -46,3 +47,4 @@ cmap w!! w !sudo tee > /dev/null %
 
 " Set YAML spacing (credits to https://stackoverflow.com/a/37488992/8673439)
 autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab
+autocmd FileType python setlocal ts=4 sts=4 sw=4 expandtab

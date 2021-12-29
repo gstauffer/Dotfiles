@@ -57,3 +57,6 @@ fi
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+export PATH="/opt/homebrew/opt/tcl-tk/bin:$PATH"
+
+source /Users/gstauffer/.config/broot/launcher/bash/br
