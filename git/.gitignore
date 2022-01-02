@@ -1,0 +1,11 @@
+# MacOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# Folders & general
+.vscode/
+build/
+log/
+*.log
