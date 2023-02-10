@@ -50,13 +50,23 @@ export PATH="/usr/local/sbin:$PATH"
 # PATH variable - add /opt/homebrew/bin for brew (ARM)
 export PATH="/opt/homebrew/bin:$PATH"
 
-# Source local zshrc
-if [ -f "$HOME/.zshrc-local" ]; then
-    source ~/.zshrc-local
-fi
+# PATH variable - add ~/.npm/bin
+export PATH="$PATH:$HOME/.npm/bin"
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 export PATH="/opt/homebrew/opt/tcl-tk/bin:$PATH"
 
-source /Users/gstauffer/.config/broot/launcher/bash/br
+if [ -f "/Users/gstauffer/.config/broot/launcher/bash/br" ]; then
+	source /Users/gstauffer/.config/broot/launcher/bash/br
+fi
+
+if [ -f "/home/gstauffer/.config/broot/launcher/bash/br" ]; then
+	source /home/gstauffer/.config/broot/launcher/bash/br
+fi
+
+# Source local zshrc
+if [ -f "$HOME/.zshrc-local" ]; then
+    source ~/.zshrc-local
+fi
+
